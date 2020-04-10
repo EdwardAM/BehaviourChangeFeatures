@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_above="@+id/footer"
+        >
+
+        <TextView
+            android:id="@+id/expanded_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/expanded_post_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="detailed description" />
+
+        <TextView
+            android:id="@+id/users_comments_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other users comments:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expanded_post_recyclerpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/add_post_comment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Write a comment"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/expanded_post_addComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POST A COMMENT"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

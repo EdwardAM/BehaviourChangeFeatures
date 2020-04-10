@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:screenOrientation="portrait"
+        tools:context=".ui.social.LocalOpportunitiesActivity"
+        tools:ignore="ContentDescription">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DISCLAIMER"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:background="#5CFF0000"/>
+        <TextView
+            android:id="@+id/disclaimer_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:padding="10dp"
+            android:background="#5CFF0000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generic opportunities"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/generic_links_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The links below may provide you with relevant information about the support options for arthritis in your area"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:screenOrientation="portrait">
+
+            <TextView
+                android:id="@+id/generic_link_1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/generic_link_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link"
+                android:padding="10dp"
+                android:textColor="#000DFF"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Specific opportunities in your area"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/specific_links_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use the search button below to discover opportunities in your postcode region"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:screenOrientation="portrait">
+
+            <TextView
+                android:id="@+id/postcode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your postcode:"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/edit_postcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Postcode"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/powered_by_google_inner"
+            android:src="@drawable/places_powered_by_google_light"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/custom_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/results_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="53dp"
+            android:layout_below="@+id/pb_loading_indicator"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:maxLines="1000"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:text="Search results will appear below" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/custom_search_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".ui.social.ActivityForum">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="iKOALA forums" />
+
+    <TextView
+        android:id="@+id/forumDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/success_stories_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Success stories" />
+
+    <Button
+        android:id="@+id/queries_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Queries and concerns" />
+
+    <Button
+        android:id="@+id/local_opportunities_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Local Opportunities" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DISCLAIMER"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:gravity="center"
+        android:background="#5CFF0000"/>
+    <TextView
+        android:id="@+id/disclaimer_description_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:padding="10dp"
+        android:background="#5CFF0000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="External forums" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:screenOrientation="portrait">
+
+        <TextView
+            android:id="@+id/generic_forum_label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/generic_forum_link1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link"
+            android:padding="10dp"
+            android:textColor="#000DFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:screenOrientation="portrait">
+
+        <TextView
+            android:id="@+id/generic_forum_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/generic_forum_link2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link"
+            android:padding="10dp"
+            android:textColor="#000DFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
